@@ -1,0 +1,61 @@
+////// mobile //////
+@mixin container() {
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+  @content;
+}
+
+////// desktop //////
+@mixin wrapper() {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 20px;
+  margin: 0 auto;
+  @content;
+}
+
+@mixin button() {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  transition: $transition;
+  border: 0;
+  border-radius: 5%;
+  background-color: $button-color;
+  @content;
+}
+@mixin flexbox($justify-content, $align-items) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  @content;
+}
+/////// mozda i ne treba ovo, bolje u varijable fontisize,font-weight,font-height, color.....
+@mixin font($font-size, $line-height, $font-weight, $color) {
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+  color: $color;
+  @content;
+}
+
+@mixin breakpoint($value) {
+  @if $value == "phone" {
+    @media only screen and (min-width: 120px) and (max-width: 767px) {
+      @content;
+    }
+  } @else if $value == "tablet" {
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      @content;
+    }
+  } @else if $value == "desktop" {
+    @media only screen and (min-width: 1025px) {
+      @content;
+    }
+  } @else {
+    @media only screen and (max-width: $value) {
+      @content;
+    }
+  }
+}
