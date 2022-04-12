@@ -23,14 +23,20 @@
   border: 0;
   border-radius: 5%;
   background-color: $button-color;
+  font-size: 1.1rem;
+  line-height: 20px;
+  font-weight: 400;
+  color: $white;
   @content;
 }
+
 @mixin flexbox($justify-content, $align-items) {
   display: flex;
   justify-content: $justify-content;
   align-items: $align-items;
   @content;
 }
+
 /////// mozda i ne treba ovo, bolje u varijable fontisize,font-weight,font-height, color.....
 @mixin font($font-size, $line-height, $font-weight, $color) {
   font-size: $font-size;
@@ -41,19 +47,25 @@
 }
 
 @mixin breakpoint($value) {
-  @if $value == "phone" {
+  @if $value=="phone" {
     @media only screen and (min-width: 120px) and (max-width: 767px) {
       @content;
     }
-  } @else if $value == "tablet" {
+  }
+
+  @else if $value=="tablet" {
     @media only screen and (min-width: 768px) and (max-width: 1024px) {
       @content;
     }
-  } @else if $value == "desktop" {
+  }
+
+  @else if $value=="desktop" {
     @media only screen and (min-width: 1025px) {
       @content;
     }
-  } @else {
+  }
+
+  @else {
     @media only screen and (max-width: $value) {
       @content;
     }

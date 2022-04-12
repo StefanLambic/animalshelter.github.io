@@ -3,10 +3,12 @@
   max-width: 100vw;
   height: 25vw;
   position: relative;
+
   @include breakpoint(phone) {
     height: 61vw;
   }
 }
+
 .slide {
   position: absolute;
   inset: 0;
@@ -15,7 +17,7 @@
   transition-delay: 200ms;
 }
 
-.slide > img {
+.slide>img {
   width: 100%;
   height: 100%;
   object-position: center;
@@ -41,6 +43,7 @@
   border-radius: 0.2rem;
   padding: 0 0.5rem;
   background-color: rgba(0, 0, 0, 0.1);
+
   @include breakpoint(phone) {
     padding: 0 0.4rem;
     font-size: 1.3rem;
@@ -59,7 +62,8 @@
 
 .carousel-button.prev {
   left: 50rem;
-  top: 35rem;
+  top: 32rem;
+
   @include breakpoint(phone) {
     top: 18rem;
     left: 16rem;
@@ -68,7 +72,8 @@
 
 .carousel-button.next {
   right: 55rem;
-  top: 35rem;
+  top: 32rem;
+
   @include breakpoint(phone) {
     top: 18rem;
     right: 16rem;
@@ -76,46 +81,53 @@
 }
 
 .adopt {
-  margin-top: 100px; //////padding i konzistentno!!////
+  margin-top: 100px;
+
   &__holder {
     @include wrapper();
     @include flexbox(space-around, center);
+
     @include breakpoint(phone) {
       @include flexbox(space-between, center);
       flex-direction: column-reverse;
     }
   }
+
   &__img {
     display: block;
     max-width: 500px;
     max-height: 500px;
     margin-bottom: 30px;
   }
+
   &__src {
     max-width: 100%;
     height: auto;
     display: block;
   }
+
   &__first {
     text-align: center;
     max-width: 500px;
   }
+
   &__title {
-    @include font(25px, 28px, 700, $primary-color);
+    @include font(1.6rem, 28px, 700, $primary-color);
     display: block;
     margin-bottom: 15px;
   }
+
   &__text {
-    @include font(18px, 25px, 400, $primary-color);
+    @include font(1.1rem, 25px, 400, $primary-color);
     display: block;
     margin-bottom: 15px;
   }
 
   &__button {
-    @include font(18px, 18px, 700, $white);
     @include button();
     margin-top: 25px;
     padding: 10px 40px;
+
     &:hover {
       background-color: $button-reverse;
     }
@@ -123,45 +135,53 @@
 }
 
 .donate {
-  margin-top: 100px; //////padding i konzistentno!!////
+  margin-top: 100px;
+
   &__holder {
     @include wrapper();
     @include flexbox(space-around, center);
+
     @include breakpoint(phone) {
       @include flexbox(space-between, center);
       flex-direction: column;
     }
   }
+
   &__img {
     display: block;
     max-width: 500px;
     max-height: 500px;
     margin-bottom: 30px;
   }
+
   &__src {
     max-width: 100%;
     height: auto;
     display: block;
   }
+
   &__second {
     text-align: center;
     max-width: 500px;
   }
+
   &__title {
-    @include font(25px, 28px, 700, $primary-color);
+    @include font(1.6rem, 28px, 700, $primary-color);
     display: block;
     margin-bottom: 15px;
   }
+
   &__text {
-    @include font(18px, 25px, 400, $primary-color);
+    @include font(1.1rem, 25px, 400, $primary-color);
     display: block;
     margin-bottom: 15px;
   }
+
   &__button {
-    @include font(18px, 18px, 700, $white);
     @include button();
     margin-top: 25px;
     padding: 10px 40px;
+
     &:hover {
       background-color: $button-reverse;
     }
@@ -169,44 +189,52 @@
 }
 
 .help {
-  padding: 50px; //////koinzistentno mora biti!!!////
   margin-top: 100px;
+  padding: 50px;
+
   &__holder {
     @include wrapper();
     @include flexbox(space-evenly, center);
     text-align: center;
+
     @include breakpoint(phone) {
       @include flexbox(space-between, center);
       flex-direction: column;
     }
   }
+
   &__icon {
     width: 70px;
     height: 70px;
     display: block;
     margin: 0 auto;
   }
+
   &__icon svg {
-    fill: lightseagreen;
+    fill: #8ac0af;
   }
+
   &__title {
-    @include font(22px, 25px, 700, $primary-color);
     margin: 15px 0 15px 0;
     display: block;
   }
+
   &__text {
-    @include font(18px, 25px, 400, $primary-color);
+    @include font(1.1rem, 25px, 400, $primary-color);
     max-width: 260px;
   }
+
   &__col {
     @include breakpoint(phone) {
       margin-top: 20px;
     }
   }
+
   &__link {
     display: inline-block;
+    @include font(1.3rem, 25px, 400, $primary-color);
     text-decoration: none;
-    color: $black;
+
     &:hover {
       color: $button-reverse;
     }
@@ -214,45 +242,53 @@
 }
 
 .shelters {
-  padding: 100px 0; ///// konzistentnost!! ///
+  padding: 100px 0;
+
   &__container {
     @include flexbox(space-evenly, center);
     @include wrapper();
+
     @include breakpoint(phone) {
       flex-direction: column;
     }
   }
+
   &__img {
     @extend %cover;
     width: 200px;
     height: 200px;
     border-radius: 10%;
   }
+
   &__card {
     padding: 20px;
+
     &:hover {
       box-shadow: 0 2px 5px 0 $primary-color;
     }
   }
+
   &__name {
-    @include font(22px, 25px, 700, $primary-color);
+    @include font(1.3rem, 25px, 700, $primary-color);
     display: block;
     margin: 15px 0 15px 0;
   }
+
   &__info {
-    @include font(18px, 18px, 400, $primary-color);
+    @include font(1.1rem, 18px, 400, $primary-color);
     display: block;
     margin-bottom: 15px;
   }
+
   &__bot {
     text-align: center;
   }
 
   &__link {
-    @include font(18px, 18px, 700, $white);
     @include button();
     margin-top: 25px;
     padding: 10px 40px;
+
     &:hover {
       background-color: $button-reverse;
     }
@@ -263,6 +299,7 @@
   &__holder {
     background-color: $white;
     padding: 60px 0 60px 0;
+
     @include breakpoint(desktop) {
       @include flexbox(space-between, center);
       @include wrapper();
@@ -273,6 +310,7 @@
   &__content {
     text-align: center;
     @include container();
+
     @include breakpoint(desktop) {
       max-width: 533px;
       text-align: left;
@@ -280,15 +318,16 @@
   }
 
   &__title {
-    @include font(22px, 25px, 700, $primary-color);
+    @include font(1.3rem, 25px, 700, $primary-color);
     margin-bottom: 20px;
+
     @include breakpoint(desktop) {
-      @include font(26px, 30px, 700, $primary-color);
+      @include font(1.6rem, 30px, 700, $primary-color);
     }
   }
 
   &__text {
-    @include font(18px, 35px, 400, $primary-color);
+    @include font(1.1rem, 35px, 400, $primary-color);
     margin-bottom: 15px;
   }
 
@@ -298,6 +337,7 @@
 
   &__form-holder {
     text-align: center;
+
     @include breakpoint(desktop) {
       max-width: 360px;
       text-align: left;
@@ -314,16 +354,17 @@
     line-height: 17px;
     border-radius: 5px;
     padding-left: 18px;
+
     @include breakpoint(desktop) {
       min-width: 320px;
     }
   }
 
   &__btn {
-    @include font(18px, 18px, 700, $white);
     @include button();
     margin-top: 25px;
     padding: 10px 40px;
+
     &:hover {
       background-color: $button-reverse;
     }

@@ -191,7 +191,7 @@ input {
 }
 
 .navbar-logo:hover {
-  color: #3de7b1;
+  color: #62dcb5;
   opacity: 0.6;
 }
 
@@ -220,7 +220,7 @@ input {
 }
 
 .navbar-links li a:hover {
-  color: #3de7b1;
+  color: #62dcb5;
 }
 
 .toggle-button {
@@ -331,7 +331,7 @@ input {
 
 .carousel-button:hover,
 .carousel-button:focus {
-  color: #3de7b1;
+  color: #62dcb5;
   background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -341,7 +341,7 @@ input {
 
 .carousel-button.prev {
   left: 50rem;
-  top: 35rem;
+  top: 32rem;
 }
 @media only screen and (min-width: 120px) and (max-width: 767px) {
   .carousel-button.prev {
@@ -352,7 +352,7 @@ input {
 
 .carousel-button.next {
   right: 55rem;
-  top: 35rem;
+  top: 32rem;
 }
 @media only screen and (min-width: 120px) and (max-width: 767px) {
   .carousel-button.next {
@@ -397,7 +397,7 @@ input {
   max-width: 500px;
 }
 .adopt__title {
-  font-size: 25px;
+  font-size: 1.6rem;
   line-height: 28px;
   font-weight: 700;
   color: #3a3f58;
@@ -405,7 +405,7 @@ input {
   margin-bottom: 15px;
 }
 .adopt__text {
-  font-size: 18px;
+  font-size: 1.1rem;
   line-height: 25px;
   font-weight: 400;
   color: #3a3f58;
@@ -413,22 +413,22 @@ input {
   margin-bottom: 15px;
 }
 .adopt__button {
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: 700;
-  color: #fff;
   display: inline-block;
   text-decoration: none;
   cursor: pointer;
   transition: 0.3s ease-in-out;
   border: 0;
   border-radius: 5%;
-  background-color: #ff0000;
+  background-color: #c26c6c;
+  font-size: 1.1rem;
+  line-height: 20px;
+  font-weight: 400;
+  color: #fff;
   margin-top: 25px;
   padding: 10px 40px;
 }
 .adopt__button:hover {
-  background-color: #3de7b1;
+  background-color: #62dcb5;
 }
 
 .donate {
@@ -467,7 +467,7 @@ input {
   max-width: 500px;
 }
 .donate__title {
-  font-size: 25px;
+  font-size: 1.6rem;
   line-height: 28px;
   font-weight: 700;
   color: #3a3f58;
@@ -475,7 +475,7 @@ input {
   margin-bottom: 15px;
 }
 .donate__text {
-  font-size: 18px;
+  font-size: 1.1rem;
   line-height: 25px;
   font-weight: 400;
   color: #3a3f58;
@@ -483,27 +483,27 @@ input {
   margin-bottom: 15px;
 }
 .donate__button {
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: 700;
-  color: #fff;
   display: inline-block;
   text-decoration: none;
   cursor: pointer;
   transition: 0.3s ease-in-out;
   border: 0;
   border-radius: 5%;
-  background-color: #ff0000;
+  background-color: #c26c6c;
+  font-size: 1.1rem;
+  line-height: 20px;
+  font-weight: 400;
+  color: #fff;
   margin-top: 25px;
   padding: 10px 40px;
 }
 .donate__button:hover {
-  background-color: #3de7b1;
+  background-color: #62dcb5;
 }
 
 .help {
-  padding: 50px;
   margin-top: 100px;
+  padding: 50px;
 }
 .help__holder {
   width: 100%;
@@ -530,18 +530,14 @@ input {
   margin: 0 auto;
 }
 .help__icon svg {
-  fill: lightseagreen;
+  fill: #8ac0af;
 }
 .help__title {
-  font-size: 22px;
-  line-height: 25px;
-  font-weight: 700;
-  color: #3a3f58;
   margin: 15px 0 15px 0;
   display: block;
 }
 .help__text {
-  font-size: 18px;
+  font-size: 1.1rem;
   line-height: 25px;
   font-weight: 400;
   color: #3a3f58;
@@ -554,11 +550,14 @@ input {
 }
 .help__link {
   display: inline-block;
+  font-size: 1.3rem;
+  line-height: 25px;
+  font-weight: 400;
+  color: #3a3f58;
   text-decoration: none;
-  color: #2e2d2d;
 }
 .help__link:hover {
-  color: #3de7b1;
+  color: #62dcb5;
 }
 
 .shelters {
@@ -590,7 +589,7 @@ input {
   box-shadow: 0 2px 5px 0 #3a3f58;
 }
 .shelters__name {
-  font-size: 22px;
+  font-size: 1.3rem;
   line-height: 25px;
   font-weight: 700;
   color: #3a3f58;
@@ -598,7 +597,7 @@ input {
   margin: 15px 0 15px 0;
 }
 .shelters__info {
-  font-size: 18px;
+  font-size: 1.1rem;
   line-height: 18px;
   font-weight: 400;
   color: #3a3f58;
@@ -609,22 +608,22 @@ input {
   text-align: center;
 }
 .shelters__link {
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: 700;
-  color: #fff;
   display: inline-block;
   text-decoration: none;
   cursor: pointer;
   transition: 0.3s ease-in-out;
   border: 0;
   border-radius: 5%;
-  background-color: #ff0000;
+  background-color: #c26c6c;
+  font-size: 1.1rem;
+  line-height: 20px;
+  font-weight: 400;
+  color: #fff;
   margin-top: 25px;
   padding: 10px 40px;
 }
 .shelters__link:hover {
-  background-color: #3de7b1;
+  background-color: #62dcb5;
 }
 
 .access__holder {
@@ -656,7 +655,7 @@ input {
   }
 }
 .access__title {
-  font-size: 22px;
+  font-size: 1.3rem;
   line-height: 25px;
   font-weight: 700;
   color: #3a3f58;
@@ -664,14 +663,14 @@ input {
 }
 @media only screen and (min-width: 1025px) {
   .access__title {
-    font-size: 26px;
+    font-size: 1.6rem;
     line-height: 30px;
     font-weight: 700;
     color: #3a3f58;
   }
 }
 .access__text {
-  font-size: 18px;
+  font-size: 1.1rem;
   line-height: 35px;
   font-weight: 400;
   color: #3a3f58;
@@ -706,22 +705,22 @@ input {
   }
 }
 .access__btn {
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: 700;
-  color: #fff;
   display: inline-block;
   text-decoration: none;
   cursor: pointer;
   transition: 0.3s ease-in-out;
   border: 0;
   border-radius: 5%;
-  background-color: #ff0000;
+  background-color: #c26c6c;
+  font-size: 1.1rem;
+  line-height: 20px;
+  font-weight: 400;
+  color: #fff;
   margin-top: 25px;
   padding: 10px 40px;
 }
 .access__btn:hover {
-  background-color: #3de7b1;
+  background-color: #62dcb5;
 }
 
 .footer__logo {
@@ -758,16 +757,16 @@ input {
   transition: 0.3s ease-in-out;
   border: 0;
   border-radius: 5%;
-  background-color: #ff0000;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 700;
+  background-color: #c26c6c;
+  font-size: 1.1rem;
+  line-height: 20px;
+  font-weight: 400;
   color: #fff;
   margin-top: 15px;
   padding: 12px 60px;
 }
 .footer__button:hover {
-  background-color: #3de7b1;
+  background-color: #62dcb5;
 }
 @media only screen and (min-width: 120px) and (max-width: 767px) {
   .footer__button {
@@ -793,7 +792,7 @@ input {
   color: #fff;
 }
 .footer--link:hover {
-  color: #3de7b1;
+  color: #62dcb5;
 }
 .footer__bot {
   background-color: #012f9e;
@@ -856,10 +855,10 @@ input {
   background-color: #f3e5e5;
   display: inline-block;
   text-decoration: none;
-  fill: #29917a;
+  fill: rgb(41, 145, 122);
 }
 .footer-network-link:hover {
-  background-color: #3de7b1;
+  background-color: #62dcb5;
 }
 
 .footer-network-link svg {

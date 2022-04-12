@@ -4,86 +4,106 @@
     width: 55px;
     display: block;
     margin-bottom: 15px;
+
     &:hover {
       opacity: 0.6;
     }
+
     @include breakpoint(phone) {
       height: 45px;
       width: 45px;
     }
   }
+
   &__col {
     @include breakpoint(phone) {
       margin-right: 25px;
     }
   }
+
   &__src {
     display: block;
   }
+
   &__top {
     background-color: $footer-clr1;
     padding: 80px 0;
   }
+
   &__button {
     @include button();
-    @include font(16px, 18px, 700, $white);
     margin-top: 15px;
     padding: 12px 60px;
+
     &:hover {
       background-color: $button-reverse;
     }
+
     @include breakpoint(phone) {
       padding: 8px 20px;
     }
   }
+
   &__row {
     @include wrapper();
     @include flexbox(space-around, center);
   }
+
   &--link {
     margin-bottom: 10px;
     display: block;
     text-decoration: none;
     @include font(18px, 22px, 400, $white);
+
     &:hover {
       color: $button-reverse;
     }
   }
+
   &__bot {
     background-color: $footer-clr2;
     padding: 20px 0;
   }
+
   &__paragraph {
     @include font(18px, 28px, 400, $white);
     max-width: 200px;
   }
+
   &__text {
     @include font(18px, 25px, 400, $white);
     max-width: 200px;
+
     @include breakpoint(phone) {
       margin-top: 35px;
     }
   }
+
   &-copy {
     @include font(18px, 20px, 400, $white);
+
     @include breakpoint(phone) {
       max-width: 185px;
     }
   }
+
   &__bot--holder {
     @include wrapper();
     @include flexbox(space-between, center);
   }
+
   &__nav {
     @include breakpoint(phone) {
       margin-top: 60px;
     }
   }
 }
+
 .footer-network-item {
   display: inline-block;
   margin-right: 8px;
 }
+
 .footer-network-link {
   width: 44px;
   height: 44px;
@@ -92,10 +112,12 @@
   display: inline-block;
   text-decoration: none;
   fill: rgb(41, 145, 122);
+
   &:hover {
     background-color: $button-reverse;
   }
 }
+
 .footer-network-link svg {
   fill: $primary-color;
   height: 22px;
